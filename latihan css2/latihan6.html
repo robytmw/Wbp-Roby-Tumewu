@@ -1,0 +1,21 @@
+<html lang="en">
+    <head>
+        <title>DESCENDANT SELECTOR (SPASE)</title>
+        <style>
+            /* rule akan diterapkan pada elemen paragraf yang merupakan turunan elemen div */
+            div p{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>paragraf pertama. didalam div</p>
+            <p>paragraf kedua. didalam div</p>
+            <section><p>paragraf ketiga. di dalam div walaupun bukan sebagai anak elemen secara langsung, namun termasuk dalam turunannya</p></section>
+            <p>paragraf keempat. didalam div</p>
+        </div>
+        <p>paragraf kelima. diluar div</p>
+        <p>paragraf keenam. diluar div</p>
+    </body>
+</html>

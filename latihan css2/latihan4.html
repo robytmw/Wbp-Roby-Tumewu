@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <title>GENERAL SIBLING SELECTOR (~)</title>
+        <style>
+            /* Rule akan ditetapkan pada elemen header yang berada pada tepat setelah elemen img */
+            img~p{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            ini merupkana paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini
+        </p>
+
+        <img src="gambar.jpeg" alt="gambar bebas" width="400px">
+        <p>
+            Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini menerapkan rule dengan menampilkan teks 
+            berwarna hijau.
+        </p>
+
+        <div>
+        <p>
+            Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, namun paragraf ini dibungkus di dalam div sehingga paragraf 
+            ini tidak akan menerapkan rule styling karena tidak memiliki induk yang sama.
+        </p>
+    </div>
+
+    <p>
+        Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan memiliki induk yang sama seperti elemen gambar, 
+        sehingga elemen ini akan menerapkan rule dengan menampilkan teks berwarna hijau.
+    </p>
+    </body>
+</html>
