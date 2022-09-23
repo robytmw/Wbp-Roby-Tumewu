@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="alert('Anda menekan elemen button')"> Click disini</button>
+    
+    <script>
+
+        //Variable
+        var firstName="Harry";
+        console.log(firstName);
+
+        firstName="Ron"
+        console.log(firstName);
+
+         //Hoisting
+         x = 100;
+         var x;
+         console.log(x);
+
+         //Variable dengan let
+         let y;
+         y=100;
+         console.log(y);
+
+         //Constanta
+         const z = 100;
+         console.log(z);
+
+         const zz = 200;
+         console.log(zz);
+
+         //TIPE DATA
+         //Undefined
+         let a;
+         console.log(typeof(a));
+
+         //Numbers
+         let b = 10;
+         console.log(typeof(b));
+
+         let c = 17.25;
+         console.log(typeof(c));
+
+         //Operator
+         let d=12;
+         let e=9;
+
+         console.log(d+e);
+         console.log(d-e);
+         console.log(d*e);
+         console.log(d/e);
+         console.log(d%e);
+
+         //Operator incerement (++) dan decremenet (--)
+         let postfix =5;
+         console.log(postfix++);
+
+         let prefix=5;
+         console.log(++prefix);
+
+         //String
+         let greet="Hello"
+         let moreGreet=greet+greet;
+         console.log(moreGreet);
+
+         //Bolean
+         let m=true;
+         let n=false
+         console.log(typeof(m))
+         console.log(typeof(n))
+
+         const p=10;
+         const o=12;
+
+         let isGreater= p>o;
+         let isLess= p<o;
+         console.log(isGreater);
+    
+         //Null
+         let someLaterData=null;
+         console.log(someLaterData);
+         
+
+         //Array
+         let myArray=['Coklat','42.5','22',true,"Programming"];
+         console.log(myArray);
+         console.log(myArray[0]);
+         console.log(myArray[1]);
+         console.log(myArray[2]);
+         console.log(myArray[3]);
+         console.log(myArray[4]);
+         console.log("Panjang nilai myArray adalah" + " ", myArray.length)
+
+         //Object
+         let user={
+            firstName:"Harry",
+            lastName:"Potter",
+            age:20,
+            isMuggle:false,
+            stuff:["wand","Flying car","Owl"]
+        };
+
+        console.log("Hallo nama saya" + " " + user.firstName  + " " +user.lastName);
+        console.log("Umur saya adalah" + " " +user.age)
+
+        //Obeject didalam object
+        let user2={
+            name:{
+                first:"Harry",
+                last:"Potter"
+            },
+            age:20,
+            isMuggle:false,
+            stuff:["wand","Flying car","Owl"]
+        }
+        
+        console.log("Hallo nama saya" + " "+user2.name.first+ " "+user2.name.last);
+        console.log("Hallo umur saya adalah"+" "+user2.age);
+         
+
+         
+    </script>
+
+</body>
+
+</html>
+
