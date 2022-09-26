@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href=style.css>
+</head>
+<body>
+  <body>
+    <div id="main">
+      <form>
+        <input type="text" id="viewer" />
+
+        <table>
+          <tr>
+            <td>
+              <input type="button" value="7" class="btn" onclick="view(7)" />
+            </td>
+            <td>
+              <input type="button" value="8"class="btn" onclick="view(8)"
+              />
+            </td>
+            <td>
+              <input type="button" value="9" class="btn" onclick="view('9')" />
+            </td>
+            <td>
+              <input type="button" button style="background-color:orange" value="+/-" class="btn" onclick="view('+/-')" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="4" class="btn" onclick="view(4)" />
+            </td>
+            <td>
+              <input type="button" value="5" class="btn" onclick="view(5)" />
+            </td>
+            <td>
+              <input type="button" value="6" class="btn" onclick="view(6)" />
+            </td>
+            <td>
+              <input type="button" style="background-color:orange" value="-" class="btn" onclick="view('-')" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="1" class="btn" onclick="view(1)" />
+            </td>
+            <td>
+              <input type="button" value="2" class="btn" onclick="view(2)" />
+            </td>
+            <td>
+              <input type="button" value="3" class="btn" onclick="view(3)" />
+            </td>
+            <td>
+              <input type="button" style="background-color:orange" value="+" class="btn" onclick="view('+')" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="C" class="btn" onclick="clean()" />
+            </td>
+            <td>
+              <input type="button" value="0" class="btn" onclick="view(0)" />
+            </td>
+            <td>
+              <input type="button" style="background-color:orange" value="=" class="btn" onclick="equal()" />
+            </td>
+            
+        </table>
+      </form>
+    </div>
+   <script>
+    function view(val) {
+        document.getElementById("viewer").value += val;
+      }
+
+      function clean() {
+        document.getElementById("viewer").value = "";
+      }
+
+      function backspace() {
+        var val = document.getElementById("viewer").value;
+        document.getElementById("viewer").value = val.substring(
+          0,
+          val.length - 1
+        );
+      }
+
+      function equal() {
+        var val = document.getElementById("viewer").value;
+        if (val) {
+          document.getElementById("viewer").value = eval(val);
+        }
+      }
+   </script>
+   </body>
+ </html
